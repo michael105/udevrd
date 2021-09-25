@@ -29,7 +29,7 @@ Uses the inotify interface.
 
 
 
-Supports: 
+### Supports: 
 
 * changing device access rights, group and owner on startup and device creation
 
@@ -45,7 +45,7 @@ Supports:
 
 
 
-About:
+### About:
  
   The udevrd daemon supervises the /dev directory.
 	Access rights, owner and group of the devices are set according to patterns,
