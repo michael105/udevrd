@@ -63,7 +63,7 @@ Uses the inotify interface.
 
 
 
-Usage:
+### Usage:
 	
 	udevrd [-c config] [-e] [-B]
 		
@@ -104,7 +104,7 @@ Usage:
 
 
 
-Configuration:
+### Configuration:
 		
 		The configuration is done with the configuration file udevrd.conf.
 		This is a simple shell script; the supplied example is documented.
@@ -133,7 +133,7 @@ Configuration:
 
 
 
-Compilation:
+### Compilation:
 
 		`make`
 		(within the minilib project hierarchy)
