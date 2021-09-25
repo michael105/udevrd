@@ -31,17 +31,17 @@ Uses the inotify interface.
 
 Supports: 
 
-	changing device access rights, group and owner on startup and device creation
+	* changing device access rights, group and owner on startup and device creation
 
-	execution of commands on device creation and removal, optional with a different uid/gid
+	* execution of commands on device creation and removal, optional with a different uid/gid
 
-	optional logging to the kernel printbuf, logfile or stderr
+	* optional logging to the kernel printbuf, logfile or stderr
 
-	colorized output
+	* colorized output
 
-	utilizes inotify and vfork
+	* utilizes inotify and vfork
 
-	pattern matching for the device rules
+	* pattern matching for the device rules
 
 
 
