@@ -3,9 +3,17 @@
 ========
 
 
-Work in progress - it's a backup copy. (2021/02)
-Atm about to clean the structure.
-Harder then writing this thing..
+Work in progress.
+
+lacks the tagging, needed by libinput. I'm currently trying to circumvent the 
+imho fiddly separation of device nodes, and libudev tags into several directories.
+
+There should be a more obvious way. Furthermore, documentation of libinput is lacking.
+
+Fixed device paths, e.g. for input, would be way more convenient.
+
+
+
 
 --------
 
@@ -48,8 +56,6 @@ About:
 
 	Since this process in the normal usecase runs for the whole uptime,
 	a slim udevrd has it's advantages. 
-	(I'm wondering whether I'll be able to fit a whole unix system without kernel into 
-	a x86 cpu's L1 cache..)
 
 	It would be possible to compile the daemon with minilib to not use any
 	dynamic allocations. (Albite the dynamic memory usage might stay in the normal
