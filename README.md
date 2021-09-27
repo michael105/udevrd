@@ -130,9 +130,35 @@ Uses the inotify interface.
 		(`killall -SIGUSR1 udevrd`)
 
 		Please have a look into the reference of minilib for further 
-		documentation on 'match'.
+		documentation on 'match', and the example configuration file.
 [https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match](https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match)
 
+(Partial) Example of the patternmatching and configuration
+
+```
+# 	matchmode match owner:group access link execute (user:binary) log	exec on remove
+# match directories
+match	'dir>'	'/dev/input*'	root:input	0750
+match 'dir' 	'/dev/shm'  	root:shm	0770
+match 'dir+'	'/dev/snd'  	root:audio	0750
+match 'dir' 	'/dev/pts'  	root:root	0755
+# don't recurse into any other subdir
+match	'dir-'	'/dev/*'
+
+# match devices
+match x 	'/dev/sdb1'	root:usb	0660	/dev/usbstick	micha:mountusb.sh "usbstick inserted" 
+match x 	"/dev/sdb*"	root:usb	0660		
+match x 	"/dev/sdc*"	root:usb	0660		
+match x 	'/dev/sd*'	root:disk	0660
+match x 	'/dev/input/by-path/*event-mouse'	root:input	0660	/dev/input/touchpad
+match x 	'/dev/input/by-path/*event-kbd'		root:input	0660	/dev/input/keyboard
+match x 	'/dev/input/*'	root:input	0660
+match x 	'/dev/snd/*'  	root:audio	0660
+match x 	'/dev/mixer'  	root:audio	0660
+match x 	'/dev/tty'    	root:tty	0666
+#match x	'/dev/tty*'   	root:tty	0660
+#match x	'/dev/pts*'   	root:tty	0666
+```
 
 
 
