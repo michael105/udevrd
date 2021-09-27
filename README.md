@@ -17,6 +17,7 @@ Fixed device paths, e.g. for input, would be way more convenient.
 
 --------
 
+### Summary
 
 A slim resource friendly udevd daemon. 
 
@@ -29,7 +30,7 @@ Uses the inotify interface.
 
 
 
-### Supports: 
+#### Supports: 
 
 * changing device access rights, group and owner on startup and device creation
 
@@ -126,6 +127,7 @@ Uses the inotify interface.
 
 		Please have a look into the reference of minilib for further 
 		documentation on 'match'.
+		[https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match](https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match)
 
 		Signal udevrd with SIGUSR1 to reload the configuration file,
 		or with SIGUSR2 to load the configuration embedded into udevrd itself.
