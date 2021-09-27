@@ -125,13 +125,14 @@ Uses the inotify interface.
 			\d digit 
 			\D no digit 
 
-		Please have a look into the reference of minilib for further 
-		documentation on 'match'.
-		[https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match](https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match)
-
 		Signal udevrd with SIGUSR1 to reload the configuration file,
 		or with SIGUSR2 to load the configuration embedded into udevrd itself.
 		(`killall -SIGUSR1 udevrd`)
+
+		Please have a look into the reference of minilib for further 
+		documentation on 'match'.
+[https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match](https://github.com/michael105/minilib/blob/master/doc/reference/regex.asc#match)
+
 
 
 
